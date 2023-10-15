@@ -13,6 +13,8 @@ namespace WowLaunchApp
 {
     class Utils
     {
+        //全局页面引用
+        public static Dialog dialog;
         //服务器ip地址
         public static string Host = "";
         //登录器端口

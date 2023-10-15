@@ -125,7 +125,7 @@ namespace WowLaunchApp
             }
 
             //显示账号管理页面
-            HandyControl.Controls.Dialog.Show(new AccountDialog());
+            Utils.dialog = HandyControl.Controls.Dialog.Show(new AccountDialog());
         }
 
         private async void StartGame(object sender, RoutedEventArgs e)

@@ -86,6 +86,12 @@ namespace WowLaunchApp.View
                     //角色解卡
                     SocketMgr.Instance.UnLockPlayer(account.Text, pwd.Password, playerName.Text);
                     break;
+
+            }
+
+            if(Utils.dialog != null)
+            {
+                Utils.dialog.Close();
             }
         }
     }
