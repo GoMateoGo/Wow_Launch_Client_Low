@@ -192,5 +192,12 @@ namespace WowLaunchApp
                 return;
             }
         }
+
+        // 在窗口关闭时执行的代码
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            SocketMgr.Instance.CloseClient();
+            
+        }
     }
 }

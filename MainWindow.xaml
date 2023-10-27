@@ -12,7 +12,8 @@
         Background="Transparent" ResizeMode="CanMinimize"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
         MouseLeftButtonUp="Window_MouseLeftButtonUp"
-        MouseMove="Window_MouseMove">
+        MouseMove="Window_MouseMove"
+        Closing="Window_Closing">
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="0" GlassFrameThickness="-1"/>
     </WindowChrome.WindowChrome>

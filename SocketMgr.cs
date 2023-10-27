@@ -230,5 +230,28 @@ namespace WowLaunchApp
             }
 
         }
+
+        //获取网站/充值网站
+        public void CloseClient()
+        {
+            try
+            {
+                if (ClientWebSocket == null || !ClientWebSocket.Connected)
+                {
+                    Growl.Error("服务器连接失败..");
+                    return;
+                }
+
+                // 构建包
+                byte[] packet = Utils.BuildPacket(999, "");
+
+                ClientWebSocket.Send(packet);
+            }
+            catch (Exception)
+            {
+
+            }
+
+        }
     }
 }
